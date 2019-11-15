@@ -1,0 +1,10 @@
+getwd()
+file.edit(".gitignore")
+ptm <- proc.time()
+DF <- read.csv("UNRATE.csv")
+CSV_READ_TIME <- (proc.time() - ptm)
+CSV_READ_TIME
+class(DF)
+typeof(DF)
+str(DF)
+data.table::fread("UNRATE.csv")
